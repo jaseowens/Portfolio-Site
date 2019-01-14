@@ -1,3 +1,20 @@
+html {
+  scroll-behavior: smooth; }
+
+p {
+  margin: 0px; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+a:hover {
+  color: black; }
+
+#fullPage {
+  height: 93vh;
+  background-color: #3d5267; }
+
 .nav-logo {
   font-size: 1.5rem;
   color: #cd6666; }
@@ -5,9 +22,10 @@
 .nav-item {
   padding: 5px;
   font-weight: 600;
-  font-size: 1.25rem;
-  margin-left: 15px;
-  margin-right: 15px;
+  font-size: 0.8rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
   border-radius: 3px;
   margin-bottom: 1rem;
   color: white;
@@ -21,7 +39,17 @@
 .header {
   width: 100%; }
   .header #logo {
-    font-size: 3rem; }
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 45%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .header #logo p {
+      font-weight: 400;
+      font-size: 1rem; }
 
 .dflex {
   display: flex; }
@@ -33,13 +61,16 @@
   width: 80%;
   background-color: #fdf5e6;
   border-radius: 5px;
-  padding: 30px;
+  margin-top: -100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .padding-right-15 {
   padding-right: 15px; }
 
 #gallery {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
   flex-wrap: wrap; }
   #gallery .design-gallery-card {
     box-sizing: border-box;
@@ -58,6 +89,21 @@
           height: auto;
           border-radius: 3px; }
 
+.body-head {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fdf5e6; }
+
+#designGalleryHeader {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #3d5267; }
+
+#nav {
+  background-color: #3d5267; }
+
 .design-gallery-card:hover {
   transform: scale(1.04); }
 
@@ -70,11 +116,18 @@
 .justify-center {
   justify-content: center; }
 
+.justify-right {
+  justify-content: flex-end; }
+
 .align-center {
   align-content: center; }
 
+.h100 {
+  height: 100%; }
+
 body {
-  background-color: #3d5267;
+  margin: 0px;
+  background-color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

@@ -8,23 +8,29 @@
     <title>Jase Owens Portfolio</title>
   </head>
   <body>
-    <div class="header dflex justify-center mb-0">
-      <div id="logo" class="color-accent">Jase <span><!--Eventually put logo here--></span> Owens</div>
-    </div>
-    <div class="dflex justify-center">
-      <div class="nav-item">about</div>
-      <div class="nav-item">design</div>
-      <div class="nav-item home">program</div>
-      <div class="nav-item home">contact</div>
+    <div id="nav" class="dflex justify-right">
+        <div class="nav-item">ABOUT</div>
+        <div id="design-button" class="nav-item">DESIGN</div>
+        <div class="nav-item">PROGRAM</div>
+        <div class="nav-item">CONTACT</div>
+      </div>
+    <div id="fullPage">
+      <div class="header h100 dflex justify-center mb-0">
+        <div id="logo" class="color-accent">
+          <span class="dflex justify-center">Jase Owens</span>
+          <p class="dflex justify-center">This is the sub header, have a short bio here</p>
+        </div>
+      </div>
     </div>
 
+    <div id="design"></div>
+    
     <div class="body-container dflex">
       <div class="body-main">
-
-        <div style="font-size: 2.5rem; margin-bottom: 10px;" class="text-center color-accent">Design Gallery</div>
-
+        <div class="body-head">
+            <div id="designGalleryHeader" class="text-center color-accent">Design Gallery</div>
+        </div>
         <div id="gallery" class="dflex">
-
           <div id="bruceLeePoster" class="design-gallery-card">
             <div class="flex-div">
               <div class="card">
@@ -141,7 +147,6 @@
                   </div>
                   <img class="image" src="../main/img/gallery-images/groot.jpg" alt="Bruce Lee Poster">
               </div>
-            </div>
           </div>
             
 
@@ -187,8 +192,11 @@
            -->
 
         </div>
+      
+      </div>
       </div>
     </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </html>
