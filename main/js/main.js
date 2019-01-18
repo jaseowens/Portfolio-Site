@@ -4,10 +4,21 @@ window.onload = init();
 
 
 function init(){
-    $("#design-button").click( function() {
-        $('html,body').unbind().animate({scrollTop: $("#design").offset().top-160},'fast');
+    $("#about-button").click( function() {
+        $('html,body').unbind().animate({scrollTop: $("#about").offset().top-160},'fast');
     });
-
+    $("#development-button").click( function() {
+        $('html,body').unbind().animate({scrollTop: $("#development").offset().top-160},'fast');
+    });
+    $("#designs-button").click( function() {
+        $('html,body').unbind().animate({scrollTop: $("#designs").offset().top-160},'fast');
+    });
+    $("#contact-button").click( function() {
+        $('html,body').unbind().animate({scrollTop: $("#contact").offset().top-160},'fast');
+    });
+    $(window).bind('mousewheel DOMMouseScroll', function(event){
+        lightenNavOnScroll();
+    });
 
     (function($) {
 
@@ -74,4 +85,17 @@ function init(){
         });
         
         });
+ }
+
+ function lightenNavOnScroll(){
+    var scroll = $(window).scrollTop();
+    navOpacity = 100/scroll;
+
+    if(scroll < 100){
+        $("#nav").css("background-color", "#3d5267");
+    } else{
+        $("#nav").css("background-color", "#4d657d");
+    }
+
+
  }
