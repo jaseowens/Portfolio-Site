@@ -16,6 +16,11 @@ function init(){
     $("#contact-button").click( function() {
         $('html,body').unbind().animate({scrollTop: $("#contact").offset().top-160},'fast');
     });
+    $("#scroll-to-top-button").click( function() {
+        $('html,body').unbind().animate({scrollTop: 0},'fast');
+        $("#nav").css("background-color", "#3d5267");
+        $("#scroll-to-top").css("display","none");
+    });
     $(window).bind('mousewheel DOMMouseScroll', function(event){
         lightenNavOnScroll();
     });
@@ -90,12 +95,19 @@ function init(){
  function lightenNavOnScroll(){
     var scroll = $(window).scrollTop();
     navOpacity = 100/scroll;
-
     if(scroll < 100){
-        $("#nav").css("background-color", "#3d5267");
+        $("#nav").css("background-color", "#3d5267");        
+        $("#scroll-to-top").css("display","none");
+
     } else{
         $("#nav").css("background-color", "#4d657d");
+        $("#scroll-to-top").css("display","block");
     }
 
+    if(scroll < 200){
+        $("#scroll-to-top").css("display","none");
+    } else{
+        $("#scroll-to-top").css("display","block");
+    }
 
  }
