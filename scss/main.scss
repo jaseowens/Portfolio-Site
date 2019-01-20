@@ -42,9 +42,7 @@ button{
 
 #fullPage{
     height:93vh;
-    //background: linear-gradient(rgba(61,82,103,0.1), rgba(61,82,103,0.9));
-    //background-image: url("/main/img/main-bg.jpg");
-    //background: linear-gradient(rgba(61,82,103,0.9), rgba(61,82,103,1)), url("/main/img/main-bg.jpg") no-repeat center; 
+    margin-top: 50px;
     background-color: $main-color;
 
 }
@@ -52,6 +50,10 @@ button{
 .nav-logo {
   font-size: 1.5rem;
   color: $accent-color;
+}
+
+.wrapper{
+    margin-bottom: 25px;
 }
 
 .nav-item{
@@ -355,7 +357,6 @@ to { transform: translateY(0); }
 }
 
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     #gallery{
         .column {
@@ -367,6 +368,8 @@ to { transform: translateY(0); }
     }
     #nav{
         justify-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
 
@@ -391,12 +394,15 @@ to { transform: translateY(0); }
     }
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     #gallery{
         .column {
             flex-basis: 100%;
         }
+    }
+
+    .nav-item{
+        font-size: 0.8rem;
     }
 
   }

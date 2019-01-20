@@ -25,9 +25,6 @@ button {
   font-size: 1.5rem;
   color: #cd6666; }
 
-.wrapper {
-  margin-bottom: 25px; }
-
 .nav-item {
   padding: 5px;
   font-weight: 600;
@@ -277,6 +274,7 @@ body {
 @keyframes come-in {
   to {
     transform: translateY(0); } }
+/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   #gallery .column {
     flex-basis: 50%; }
@@ -285,9 +283,7 @@ body {
     font-size: 0.9rem; }
 
   #nav {
-    justify-content: center;
-    margin-left: 0px;
-    margin-right: 0px; }
+    justify-content: center; }
 
   #anes-dashboard-wrapper {
     display: flex;
@@ -305,11 +301,9 @@ body {
       align-content: center;
       justify-content: center;
       flex-basis: 100%; } }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   #gallery .column {
-    flex-basis: 100%; }
-
-  .nav-item {
-    font-size: 0.8rem; } }
+    flex-basis: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
