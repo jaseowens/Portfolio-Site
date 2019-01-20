@@ -304,7 +304,13 @@ body {
       display: flex;
       align-content: center;
       justify-content: center;
-      flex-basis: 100%; } }
+      flex-basis: 100%; }
+
+  #nav div {
+    margin-left: 0px;
+    margin-right: 0px; }
+  #nav .nav-logo {
+    margin-right: 10px; } }
 @media screen and (max-width: 600px) {
   #gallery .column {
     flex-basis: 100%; }

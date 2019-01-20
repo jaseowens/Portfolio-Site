@@ -392,6 +392,15 @@ to { transform: translateY(0); }
             flex-basis: 100%;
         }
     }
+    #nav{
+        div{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .nav-logo{
+            margin-right: 10px;
+        }
+    }
   }
   
   @media screen and (max-width: 600px) {
