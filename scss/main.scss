@@ -176,13 +176,13 @@ button{
 
 #nav{
     height: 50px;
-    width: 100%;
     background-color: $main-color;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     div{
@@ -400,6 +400,11 @@ to { transform: translateY(0); }
         .nav-logo{
             margin-right: 10px;
         }
+        .nav-item{
+            font-size: 0.8rem;
+            padding: 0px;
+            margin-right: 5px;
+        }
     }
   }
   
@@ -412,6 +417,8 @@ to { transform: translateY(0); }
 
     .nav-item{
         font-size: 0.8rem;
+        padding: 0px;
+        margin-right: 5px;
     }
 
   }
