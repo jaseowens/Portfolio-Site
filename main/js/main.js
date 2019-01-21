@@ -1,7 +1,6 @@
 window.onload = init();
 
-
-
+var dashGalleryViewing = 1;
 
 function init(){
     $("#about-button").click( function() {
@@ -21,6 +20,20 @@ function init(){
         $("#nav").css("background-color", "#3d5267");
         $("#scroll-to-top").css("display","none");
     });
+    $("#bb-open-project").unbind('click').bind('click', function () {
+        var win = window.open("https://play.google.com/store/apps/details?id=com.JaseOwens.bouncingBalls", '_blank');
+    });
+    $("#uc-open-project").unbind('click').bind('click', function () {
+        var win = window.open("https://play.google.com/store/apps/details?id=com.companyname.Unit_Circle", '_blank');
+    });
+    $("#ad-open-project").unbind('click').bind('click', function () {
+        var win = window.open("https://anes.uab.edu/Dashboard/", '_blank');
+    });
+
+    // $("#dash-image-left").mouseup( function() {
+
+    // });
+
     $(window).bind('mousewheel DOMMouseScroll', function(event){
         lightenNavOnScroll();
     });
@@ -111,3 +124,28 @@ function init(){
     }
 
  }
+
+ function moveDashLeft() {
+    prevDashGalleryViewing = dashGalleryViewing;
+    dashGalleryViewing -= 1;
+    if(dashGalleryViewing <= 0){
+        dashGalleryViewing = 3;
+    } 
+    $("#dash-"+prevDashGalleryViewing).removeClass("viewing");
+    $("#dash-"+prevDashGalleryViewing).addClass("hidden");
+
+    $("#dash-"+dashGalleryViewing).removeClass("hidden");
+    $("#dash-"+dashGalleryViewing).addClass("viewing");
+ }
+ function moveDashRight() {
+    prevDashGalleryViewing = dashGalleryViewing;
+    dashGalleryViewing += 1;
+    if(dashGalleryViewing > 3){
+        dashGalleryViewing = 1;
+    } 
+    $("#dash-"+prevDashGalleryViewing).removeClass("viewing");
+    $("#dash-"+prevDashGalleryViewing).addClass("hidden");
+
+    $("#dash-"+dashGalleryViewing).removeClass("hidden");
+    $("#dash-"+dashGalleryViewing).addClass("viewing");
+}

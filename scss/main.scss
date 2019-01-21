@@ -321,11 +321,36 @@ body {
     border: 3px solid white;
 }
 
+
+
+.viewing{
+    display: inline;
+}
+
+.hidden{
+    display: none;
+}
+
+.image-gallery-button{
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.image-gallery-button:hover{
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+}
+
 #anes-dashboard-wrapper{
     display: flex;
     align-content: center;
     justify-content: center;
     flex-basis: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $main-color;
     #dashboard-gallery{
         display: flex;
         align-content: center;
@@ -335,6 +360,7 @@ body {
     #dashboard-info{
         display: flex;
         align-content: center;
+        align-items: center;
         justify-content: center;
         flex-basis: 50%;
     }
@@ -342,6 +368,57 @@ body {
 
 #dashboard-title{
     font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    height: 80px;
+}
+
+#dashboard-tech-labels{
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .tech-label{
+        border: 1px solid red;
+        border-radius: 15px;
+        color: red;
+        padding: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 0.8rem;
+    }
+    .tech-label:hover{
+        border: 1px solid red;
+        background-color: red;
+        color: white;
+        border-radius: 50px;
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+}
+
+.view-project{
+    margin-top: 8px;
+    .label{
+        border: 1px solid $main-color;
+        border-radius: 2px;
+        padding: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 0.9rem;
+        color: $main-color;
+    }
+    .label:hover{
+        border: 1px solid $main-color;
+        background-color: $main-color;
+        color: white;
+        cursor: pointer;
+    }
 }
 
 .come-in {
@@ -375,8 +452,7 @@ to { transform: translateY(0); }
 
     #anes-dashboard-wrapper{
         display: flex;
-        align-content: center;
-        justify-content: center;
+        align-items: flex-start;
         flex-basis: 100%;
         flex-wrap: wrap;
         #dashboard-gallery{
@@ -390,6 +466,9 @@ to { transform: translateY(0); }
             align-content: center;
             justify-content: center;
             flex-basis: 100%;
+            #dashboard-title{
+                height: 100px;
+            }
         }
     }
     #nav{

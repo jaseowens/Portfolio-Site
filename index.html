@@ -73,19 +73,94 @@
                 <div id="anes-dashboard-wrapper">
                   <div id="dashboard-gallery" class="gallery-viewer">
                       <div id="dashboard-images"> 
-                          <img src="../main/img/dev-gallery/Capture.PNG" alt="ANES DASHBOARD HOME" width="100%" height="auto">
+                          <img id="dash-1" class="viewing" src="../main/img/dev-gallery/dashboard1.PNG" alt="ANES DASHBOARD 1" width="100%" height="auto">
+                          <img id= "dash-2" class="hidden" src="../main/img/dev-gallery/dashboard2.PNG" alt="ANES DASHBOARD 2" width="100%" height="auto">
+                          <img id="dash-3" class="hidden" src="../main/img/dev-gallery/dashboard3.PNG" alt="ANES DASHBOARD 3" width="100%" height="auto">
+                          <div class="dflex" style="justify-content: space-between;">
+                            <button onclick="moveDashLeft()" class="button image-gallery-button" id="dash-image-left">&larr;</button>
+                            <button onclick="moveDashRight()" class="button image-gallery-button" id="dash-image-right">&rarr;</button>
+                          </div>
                       </div>
                   </div>
                   <div id="dashboard-info">
-                    <div id="dashboard-title"> <b>Anesthesiology Dashboard</b></div>
+                    <div id="dashboard-title"> 
+                      <b>Anesthesiology Dashboard</b>
+                      <div id="dashboard-tech-labels">
+                          <div class="tech-label">HTML5</div>
+                          <div class="tech-label">TypeScript</div>
+                          <div class="tech-label">CSS3</div>
+                          <div class="tech-label">VB.net</div>
+                      </div>
+                      <div class="view-project">
+                          <div id="ad-open-project" class="label">View Site</div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
                 <!-- Infinite Crisis -->
-
+                <!-- <div id="anes-dashboard-wrapper">
+                    <div id="dashboard-gallery" class="gallery-viewer">
+                        <div id="ic-images"> 
+                            <img id="ic-1" class="viewing" src="../main/img/dev-gallery/ic.jpg" alt="ANES DASHBOARD 1" width="100%" height="auto">
+                        </div>
+                    </div>
+                    <div id="dashboard-info">
+                      <div id="dashboard-title"> 
+                        <b>Infinite Crisis</b>
+                        <div id="dashboard-tech-labels">
+                            <div class="tech-label">GML</div>
+                            <div class="tech-label">Adobe Illustrator</div>
+                            <div class="tech-label">Adobe Photoshop</div>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div> -->
                 <!-- Bouncing Balls -->
-
+                <div id="anes-dashboard-wrapper">
+                    <div id="dashboard-gallery" class="gallery-viewer">
+                        <div id="bouncing-balls-images"> 
+                            <img id="bb-1" class="viewing" src="../main/img/dev-gallery/bouncingBalls1.PNG" alt="BB 1" width="100%" height="auto">
+                        </div>
+                    </div>
+                    <div id="dashboard-info">
+                      <div id="dashboard-title"> 
+                        <b>Bouncing Balls</b>
+                        <div id="dashboard-tech-labels">
+                            <div class="tech-label">GML</div>
+                            <div class="tech-label">Illustrator</div>
+                            <div class="tech-label">Photoshop</div>
+                        </div>
+                        <div class="view-project">
+                            <div id="bb-open-project" class="label">Google Play Store</div>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
                 <!-- Unit Circle -->
-
+                <div id="anes-dashboard-wrapper">
+                    <div id="dashboard-gallery" class="gallery-viewer">
+                        <div id="dashboard-images"> 
+                            <img id="dash-1" class="viewing" src="../main/img/dev-gallery/uc.webp" alt="ANES DASHBOARD 1" width="100%" height="auto">
+                        </div>
+                    </div>
+                    <div id="dashboard-info">
+                      <div id="dashboard-title"> 
+                        <b>Unit Circle</b>
+                        <div id="dashboard-tech-labels">
+                            <div class="tech-label">GML</div>
+                            <div class="tech-label">Illustrator</div>
+                            <div class="tech-label">Photoshop</div>
+                        </div>
+                        <div class="view-project">
+                            <div id="uc-open-project" class="label">Google Play Store</div>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
               </div>
             
             </div>
@@ -102,6 +177,8 @@
               <div id="designGalleryHeader" class="text-center color-accent">Design Gallery</div>
           </div>
           <div id="gallery" class="dflex">
+
+            <!-- COL 1 -->
 
             <div class="column">
 
@@ -141,11 +218,36 @@
                 </div>
               </div>
 
+              <div id="bruceLeePoster" class="design-gallery-card">
+                  <div class="flex-div">
+                    <div class="card">
+                      <div class="footer">
+                          <div class="title">Welcome Back</div>
+                          <div class="gallery-button"><a href="../main/img/gallery-images/welcome-back.jpg">Open</a></div>
+                        </div>
+                        <img class="image" src="../main/img/gallery-images/welcome-back.jpg" alt="Bruce Lee Poster">
+                    </div>
+                  </div>
+                </div>
 
             </div>
 
+            <!-- COL 2 -->
+
             <div class="column">
               
+                <div id="bruceLeePoster" class="design-gallery-card">
+                    <div class="flex-div">
+                      <div class="card">
+                        <div class="footer">
+                            <div class="title">Animated Self Portrait</div>
+                            <div class="gallery-button"><a href="../main/img/gallery-images/asp.gif">Open</a></div>
+                          </div>
+                          <img class="image" src="../main/img/gallery-images/asp.gif" alt="Animated Self Portrait">
+                      </div>
+                    </div>
+                  </div>
+
               <div id="bruceLeePoster" class="design-gallery-card">
                 <div class="flex-div">
                   <div class="card">
@@ -182,8 +284,32 @@
                 </div>
               </div>
 
-            </div>
+              <div id="bruceLeePoster" class="design-gallery-card">
+                  <div class="flex-div">
+                    <div class="card">
+                      <div class="footer">
+                          <div class="title">Student Health Flyer</div>
+                          <div class="gallery-button"><a href="../main/img/gallery-images/StudentHealth-Flyer.png">Open</a></div>
+                        </div>
+                        <img class="image" src="../main/img/gallery-images/StudentHealth-Flyer.png" alt="Bruce Lee Poster">
+                    </div>
+                </div>
+              </div>
 
+              <div id="bruceLeePoster" class="design-gallery-card">
+                  <div class="flex-div">
+                    <div class="card">
+                      <div class="footer">
+                          <div class="title">Fireplace Holiday Card</div>
+                          <div class="gallery-button"><a href="../main/img/gallery-images/fireplace-Holiday-Card.png">Open</a></div>
+                        </div>
+                        <img class="image" src="../main/img/gallery-images/fireplace-Holiday-Card.png" alt="Bruce Lee Poster">
+                    </div>
+                </div>
+              </div>
+
+            </div>
+              <!-- COL 3 -->
             <div class="column">
               
               <div id="bruceLeePoster" class="design-gallery-card">
@@ -233,6 +359,43 @@
                     </div>
                 </div>
                 </div>
+
+                <div id="bruceLeePoster" class="design-gallery-card">
+                    <div class="flex-div">
+                      <div class="card">
+                        <div class="footer">
+                            <div class="title">Weekly Newsletter Masthead</div>
+                            <div class="gallery-button"><a href="../main/img/gallery-images/weeklynesletterMasthead.png">Open</a></div>
+                          </div>
+                          <img class="image" src="../main/img/gallery-images/weeklynesletterMasthead.png" alt="Bruce Lee Poster">
+                      </div>
+                  </div>
+                </div>
+
+                <div id="bruceLeePoster" class="design-gallery-card">
+                    <div class="flex-div">
+                      <div class="card">
+                        <div class="footer">
+                            <div class="title">Trunk Show Flyer</div>
+                            <div class="gallery-button"><a href="../main/img/gallery-images/eyeCareTrunkShow.png">Open</a></div>
+                          </div>
+                          <img class="image" src="../main/img/gallery-images/eyeCareTrunkShow.png" alt="Bruce Lee Poster">
+                      </div>
+                  </div>
+                </div>
+
+                <div id="bruceLeePoster" class="design-gallery-card">
+                    <div class="flex-div">
+                      <div class="card">
+                        <div class="footer">
+                            <div class="title">Greeting Card</div>
+                            <div class="gallery-button"><a href="../main/img/gallery-images/greetingCardFrontpng.png">Open</a></div>
+                          </div>
+                          <img class="image" src="../main/img/gallery-images/greetingCardFrontpng.png" alt="Bruce Lee Poster">
+                      </div>
+                  </div>
+                </div>
+
             </div>
 
           </div>
