@@ -86,30 +86,30 @@ button {
 .padding-right-15 {
   padding-right: 15px; }
 
-#gallery {
+.gallery {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
   flex-wrap: wrap; }
-  #gallery .column {
+  .gallery .column {
     display: flex;
     flex-direction: column;
     flex-basis: 33%;
     align-items: flex-start;
     height: 100%; }
-  #gallery .design-gallery-card {
+  .gallery .design-gallery-card {
     box-sizing: border-box;
     flex: 0 1 33%;
     width: 100%;
     transition: all .3s ease-in-out; }
-    #gallery .design-gallery-card .flex-div {
+    .gallery .design-gallery-card .flex-div {
       padding: 1rem;
       box-sizing: border-box; }
-      #gallery .design-gallery-card .flex-div .card {
+      .gallery .design-gallery-card .flex-div .card {
         padding: 15px;
         background-color: white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-        #gallery .design-gallery-card .flex-div .card .image {
+        .gallery .design-gallery-card .flex-div .card .image {
           width: 100%;
           height: auto;
           border-radius: 3px; }
@@ -120,7 +120,7 @@ button {
   margin-bottom: 30px;
   background-color: #fdf5e6; }
 
-#designGalleryHeader {
+.galleryHeader {
   font-size: 2.5rem;
   margin-bottom: 10px;
   font-weight: 700;
@@ -264,7 +264,7 @@ body {
   color: white;
   background-color: black; }
 
-#anes-dashboard-wrapper {
+.dev-wrapper {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -272,19 +272,19 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid #3d5267; }
-  #anes-dashboard-wrapper #dashboard-gallery {
+  .dev-wrapper .dgallery {
     display: flex;
     align-content: center;
     justify-content: center;
     flex-basis: 50%; }
-  #anes-dashboard-wrapper #dashboard-info {
+  .dev-wrapper .dev-info {
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     flex-basis: 50%; }
 
-#dashboard-title {
+.dev-title {
   font-size: 1.5rem;
   width: 100%;
   display: flex;
@@ -293,14 +293,14 @@ body {
   flex-basis: 100%;
   height: 80px; }
 
-#dashboard-tech-labels {
+.tech-labels {
   display: flex;
   width: 100%;
   flex-basis: 100%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
-  #dashboard-tech-labels .tech-label {
+  .tech-labels .tech-label {
     border: 1px solid red;
     border-radius: 15px;
     color: red;
@@ -308,7 +308,7 @@ body {
     margin-left: 5px;
     margin-right: 5px;
     font-size: 0.8rem; }
-  #dashboard-tech-labels .tech-label:hover {
+  .tech-labels .tech-label:hover {
     border: 1px solid red;
     background-color: red;
     color: white;
@@ -344,7 +344,7 @@ body {
   to {
     transform: translateY(0); } }
 @media screen and (max-width: 800px) {
-  #gallery .column {
+  .gallery .column {
     flex-basis: 50%; }
 
   .nav-item {
@@ -355,23 +355,25 @@ body {
     margin-left: 0px;
     margin-right: 0px; }
 
-  #anes-dashboard-wrapper {
+  .dev-wrapper {
     display: flex;
     align-items: flex-start;
     flex-basis: 100%;
     flex-wrap: wrap; }
-    #anes-dashboard-wrapper #dashboard-gallery {
+    .dev-wrapper .dgallery {
       display: flex;
       align-content: center;
       justify-content: center;
       flex-basis: 100%; }
-    #anes-dashboard-wrapper #dashboard-info {
+    .dev-wrapper .dev-info {
       display: flex;
       align-content: center;
       justify-content: center;
       flex-basis: 100%; }
-      #anes-dashboard-wrapper #dashboard-info #dashboard-title {
+      .dev-wrapper .dev-info .dev-title {
         height: 100px; }
+        .dev-wrapper .dev-info .dev-title b {
+          font-size: 0.8rem; }
 
   #nav div {
     margin-left: 0px;
@@ -383,7 +385,7 @@ body {
     padding: 0px;
     margin-right: 5px; } }
 @media screen and (max-width: 600px) {
-  #gallery .column {
+  .gallery .column {
     flex-basis: 100%; }
 
   .nav-item {
